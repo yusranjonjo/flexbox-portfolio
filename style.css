@@ -291,7 +291,7 @@ body {
     }
 
     .fa-js {
-        color: rgba(255, 255, 0, 0.8);
+        color: yellow;
     }
 
     .fa-js:hover {
@@ -320,7 +320,7 @@ body {
     }
 
     .span-js {
-        background-color: #ffff00cc;
+        background-color: yellow;
     }
 
 
