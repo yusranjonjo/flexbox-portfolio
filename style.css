@@ -38,6 +38,14 @@ body {
         flex-direction: column;
     }
 
+    .header,
+    .section-satu,
+    .section-dua,
+    .section-tiga,
+    .footer {
+        padding: 0px 20px;
+    }
+
     /* Untuk bagian Header */
     /* ============================== */
     .header {
@@ -178,5 +186,240 @@ body {
         color: #fc3c3c;
         transform: scale(1);
         text-shadow: 2px 2px 1px #ffffff;
+    }
+
+
+    /* Section dua About Me */
+    .section-dua {
+        width: 100%;
+        min-height: 100%;
+        background-color: #0e3658;
+    }
+
+    .heading-dua,
+    .heading-tiga {
+        color: #ffffff;
+        text-shadow: 2px 2px 1px #00a2ff;
+        font-size: 2rem;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 20px;
+    }
+
+    .dekskripsi-dua {
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        color: #ffffff;
+        padding: 40px;
+    }
+
+    .paragraf-tiga {
+        margin: 20px 0px;
+    }
+
+    .paragraf-tiga,
+    .paragraf-empat {
+        color: #00a2ff;
+        font-size: 1.1rem;
+        text-indent: 30px;
+        text-align: end;
+    }
+
+    .skill-saya {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heading-skill {
+        font-size: 1.5em;
+        color: #ffffff;
+        margin-left: 28px;
+        text-shadow: 2px 2px 1px #fc3c3c;
+        text-decoration: underline;
+    }
+
+    .daftar-skill {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .daftar-skill li {
+        padding: 30px 0px;
+        font-size: 6rem;
+        list-style: none;
+    }
+
+    .fa-html5 {
+        color: #EC6F66;
+    }
+
+    .fa-html5:hover {
+        text-shadow: 2px 2px 1px #ffffff;
+    }
+
+    .fa-css3-alt {
+        color: #00a2ff;
+    }
+
+    .fa-css3-alt:hover {
+        color: #00a2ff;
+        text-shadow: 2px 2px 1px #ffffff;
+    }
+
+    .fa-js {
+        color: rgba(255, 255, 0, 0.8);
+        border-radius: 20px;
+    }
+
+    .fa-js:hover {
+        color: yellow;
+        text-shadow: 2px 2px 1px #ffffff;
+    }
+
+    .skill-html {
+        width: 80%;
+        padding: 2px;
+        border-radius: 20px;
+        background-color: #fc3c3c;
+        color: #ffffff;
+        text-align: center;
+        font-weight: bold;
+        position: absolute;
+        left: 10%;
+        top: 30%;
+        z-index: 11;
+    }
+
+    .skill-css {
+        width: 80%;
+        padding: 2px;
+        border-radius: 20px;
+        background-color: #29abf4;
+        color: #ffffff;
+        text-align: center;
+        font-weight: bold;
+        position: absolute;
+        top: 65%;
+        z-index: 11;
+    }
+
+    .skill-js {
+        width: 80%;
+        padding: 2px;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 0, 0.8);
+        color: #ffffff;
+        text-align: center;
+        font-weight: bold;
+        position: absolute;
+        top: 95%;
+        z-index: 11;
+    }
+
+    /* Untuk section-tiga */
+    .section-tiga {
+        display: flex;
+        flex-direction: column;
+        background-color: #fc3c3c;
+    }
+
+    .services {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .daftar-services {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .web-design,
+    .web-programming,
+    .ui-ux {
+        margin-bottom: 100px;
+    }
+
+
+    .daftar-services i {
+        font-size: 7rem;
+        color: #0e3658;
+    }
+
+    .daftar-services i:hover {
+        color: #00a2ff;
+        text-shadow: 2px 2px 1px #ffffff;
+    }
+
+    .wd,
+    .wp,
+    .i-x {
+        position: absolute;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #0e3658;
+    }
+
+    .wd {
+        top: 18%;
+    }
+
+    .wp {
+        top: 51%;
+    }
+
+    .i-x {
+        top: 85%;
+    }
+
+    .ket-services {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 20px;
+        background-color: #0e3658;
+        border-radius: 8px;
+        border-left: 3px solid #29abf4;
+        border-bottom: 3px solid #29abf4;
+        outline: none;
+    }
+
+    .ket-services p {
+        color: #29abf4;
+        font-size: 1rem;
+        text-align: justify;
+
+    }
+
+    .footer {
+        width: 100%;
+        padding: 100px 20px;
+        background-color: #010102;
+        color: white;
+        border-top: 10px solid #fc3c3c;
+        min-height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
