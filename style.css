@@ -216,19 +216,16 @@ body {
         flex-direction: column;
         text-align: justify;
         color: #ffffff;
-        padding: 40px;
     }
 
-    .paragraf-tiga {
-        margin: 20px 0px;
-    }
+
 
     .paragraf-tiga,
     .paragraf-empat {
+        margin-left: 15px;
         color: #00a2ff;
         font-size: 1.1rem;
-        text-indent: 30px;
-        text-align: end;
+        text-align: justify;
     }
 
     .skill-saya {
@@ -238,30 +235,46 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-bottom: 80px;
     }
 
     .heading-skill {
         font-size: 1.5em;
         color: #ffffff;
-        margin-left: 28px;
         text-shadow: 2px 2px 1px #fc3c3c;
         text-decoration: underline;
+        margin-bottom: 20px;
     }
 
     .daftar-skill {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
+        color: #ffffff;
     }
 
-    .daftar-skill li {
-        padding: 30px 0px;
-        font-size: 6rem;
-        list-style: none;
+    .daftar-skill span {
+        display: block;
+    }
+
+    .skill-html,
+    .skill-css,
+    .skill-js {
+        width: 100%;
+        padding: 40px 80px;
+    }
+
+
+    .fa-html5,
+    .fa-css3-alt,
+    .fa-js {
+        transition: all 300ms ease-in-out;
+        font-size: 10em;
+        text-align: center;
     }
 
     .fa-html5 {
-        color: #EC6F66;
+        color: #fc3c3c;
     }
 
     .fa-html5:hover {
@@ -279,7 +292,6 @@ body {
 
     .fa-js {
         color: rgba(255, 255, 0, 0.8);
-        border-radius: 20px;
     }
 
     .fa-js:hover {
@@ -287,80 +299,60 @@ body {
         text-shadow: 2px 2px 1px #ffffff;
     }
 
-    .skill-html {
-        width: 80%;
-        padding: 2px;
+    .span-html,
+    .span-css,
+    .span-js {
+        width: 100%;
+        padding: 5px;
+        text-align: center;
         border-radius: 20px;
+        font-weight: bold;
+        font-size: 1.1em;
+        box-shadow: 1px 1px 1px #ffffff;
+    }
+
+    .span-html {
         background-color: #fc3c3c;
-        color: #ffffff;
-        text-align: center;
-        font-weight: bold;
-        position: absolute;
-        left: 10%;
-        top: 30%;
-        z-index: 11;
     }
 
-    .skill-css {
-        width: 80%;
-        padding: 2px;
-        border-radius: 20px;
-        background-color: #29abf4;
-        color: #ffffff;
-        text-align: center;
-        font-weight: bold;
-        position: absolute;
-        top: 65%;
-        z-index: 11;
+    .span-css {
+        background-color: #29abf4
     }
 
-    .skill-js {
-        width: 80%;
-        padding: 2px;
-        border-radius: 20px;
-        background-color: rgba(255, 255, 0, 0.8);
-        color: #ffffff;
-        text-align: center;
-        font-weight: bold;
-        position: absolute;
-        top: 95%;
-        z-index: 11;
+    .span-js {
+        background-color: #ffff00cc;
     }
+
 
     /* Untuk section-tiga */
     .section-tiga {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         background-color: #fc3c3c;
     }
 
     .services {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: column-reverse;
+        justify-content: space-between;
         align-items: center;
     }
 
     .daftar-services {
-        position: relative;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         width: 100%;
         margin-top: 50px;
-    }
-
-    .web-design,
-    .web-programming,
-    .ui-ux {
-        margin-bottom: 100px;
     }
 
 
     .daftar-services i {
         font-size: 7rem;
         color: #0e3658;
+        transition: all 400ms ease-in-out;
     }
 
     .daftar-services i:hover {
@@ -371,23 +363,12 @@ body {
     .wd,
     .wp,
     .i-x {
-        position: absolute;
         font-size: 1.5rem;
         font-weight: bold;
         color: #0e3658;
+        margin-bottom: 80px;
     }
 
-    .wd {
-        top: 18%;
-    }
-
-    .wp {
-        top: 51%;
-    }
-
-    .i-x {
-        top: 85%;
-    }
 
     .ket-services {
         display: flex;
@@ -396,6 +377,7 @@ body {
         align-items: center;
         width: 100%;
         padding: 20px;
+        margin-top: 20px;
         background-color: #0e3658;
         border-radius: 8px;
         border-left: 3px solid #29abf4;
@@ -415,7 +397,7 @@ body {
         padding: 100px 20px;
         background-color: #010102;
         color: white;
-        border-top: 10px solid #fc3c3c;
+        border-top: 5px solid #00a2ff;
         min-height: 30%;
         display: flex;
         flex-direction: column;
