@@ -32,10 +32,11 @@ body {
 
 @media screen and (min-width: 280px) and (max-width: 1116px) {
 
-
     .container {
+        position: relative;
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
 
     .header,
@@ -50,13 +51,17 @@ body {
     /* ============================== */
     .header {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        width: 100%;
         background-color: #29abf4;
         padding-top: 20px;
+        z-index: 10;
     }
 
     .navbar {
-        width: 90%;
+        position: relative;
+        width: 100%;
+        margin-left: -10px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -78,6 +83,54 @@ body {
         font-size: 2em;
         font-weight: bold;
     }
+
+    .bars-menu {
+        margin-bottom: 40px;
+        margin-right: 40px;
+        transition: all 400ms ease-in-out;
+    }
+
+    .bars-menu i {
+        position: fixed;
+        cursor: pointer;
+        transition-timing-function: all 800ms ease;
+    }
+
+    .menus {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #010e1a;
+        transition: all 400ms ease-in-out;
+    }
+
+    .menus li {
+        list-style: none;
+        padding: 80px 0px;
+
+    }
+
+    .menus li a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+
+    .menu {
+        display: none;
+    }
+
+
+
+
 
     /* Untuk Section-satu */
     /* ============================== */
@@ -119,14 +172,11 @@ body {
         font-weight: bold;
         text-shadow: 7px 5px 1px #fc3c3c;
         text-align: center;
-
     }
 
     .span-satu {
         display: block;
     }
-
-
 
     .paragraf-dua {
         font-size: 1.3rem;
@@ -404,4 +454,5 @@ body {
         justify-content: center;
         align-items: center;
     }
+
 }
