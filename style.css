@@ -18,6 +18,7 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -25,9 +26,418 @@ body {
 }
 
 @media screen and (min-width: 1116px) {
+    body {
+        font-family: 'poppins', sans-serif;
+    }
+
     .container {
+        width: 100%;
+    }
+
+    .header {
+        position: fixed;
+        width: 100%;
+        padding: 10px 15px;
+    }
+
+    .header-scrolled .logo {
+        display: block;
+    }
+
+    .navbar {
+        width: 90%;
+        color: #ffffff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .daftar-menu {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .daftar-menu li {
+        padding-left: 100px;
+        list-style: none;
+    }
+
+    .daftar-menu li a {
+        text-decoration: none;
+        color: inherit;
+        font-weight: bold;
+    }
+
+    .bars-menu {
         display: none;
     }
+
+    .heading-dua,
+    .heading-tiga {
+        color: #ffffff;
+        font-size: 2rem;
+        text-align: center;
+        padding: 10px;
+        text-shadow: 2px 2px 1px #fc3c3c;
+    }
+
+    .section-satu {
+        width: 100%;
+        padding: 20px 20px;
+        height: 100vh;
+        background-image: url(./image/bg-hero.png);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .foto-profil img {
+        display: none;
+    }
+
+    .paragraf-satu {
+        margin: 200px 0 0 50px;
+    }
+
+    .span-satu {
+        display: block;
+        font-size: 4rem;
+    }
+
+    .paragraf-satu,
+    .span-satu {
+        color: #ffffff;
+        font-size: 4rem;
+        font-weight: bold;
+        text-shadow: 7px 5px 1px #fc3c3c;
+    }
+
+    .paragraf-dua {
+        margin-left: 50px;
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: #ffffff;
+        text-shadow: 1px 1px 1px #fc3c3c;
+    }
+
+    .btn-read-more {
+        width: 200px;
+        padding: 10px;
+        margin: 30px 0 0 126px;
+        text-align: center;
+        text-decoration: none;
+        background-color: #fc3c3c;
+        color: white;
+        font-size: large;
+        border-radius: 20px;
+        border: none;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .btn-read-more:hover {
+        color: rgba(255, 255, 255, 0.8);
+        background-color: rgba(252, 60, 60, 0.8);
+        transform: scale(1);
+        border: none;
+    }
+
+    .btn-read-more a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .sosmed {
+        display: flex;
+        justify-content: center;
+        margin: 50px 0 0 0;
+    }
+
+    .sosmed ul {
+        width: 25%;
+        margin: 0 0 0 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sosmed li {
+        list-style: none;
+    }
+
+    .sosmed li a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .fa-facebook-square,
+    .fa-linkedin,
+    .fa-instagram-square,
+    .fa-github-square {
+        font-size: 4rem;
+        color: #fc3c3c;
+        text-shadow: .5px .5px .5px #ffffff;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .sosmed .fab:hover {
+        transform: scale(1.1);
+        text-shadow: 2px 2px 1px #ffffff;
+    }
+
+    /* Section dua About Me */
+    .section-dua {
+        width: 100%;
+        min-height: 100%;
+        background-color: #0e3658;
+    }
+
+    .heading-dua,
+    .heading-tiga {
+        color: #ffffff;
+        text-shadow: 2px 2px 1px #00a2ff;
+        font-size: 2rem;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    .about {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .dekskripsi-dua {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        text-align: justify;
+        color: #ffffff;
+        padding: 0 50px 0 0;
+        margin: 0 0 0 500px;
+    }
+
+
+
+    .paragraf-tiga,
+    .paragraf-empat {
+        margin: 10px;
+        word-spacing: 1px;
+        color: #00a2ff;
+        font-size: 1.1rem;
+        text-align: left;
+        text-indent: 50px;
+    }
+
+    .skill-saya {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 100px;
+        margin-bottom: 80px;
+    }
+
+    .heading-skill {
+        display: none;
+        font-size: 1.5em;
+        color: #ffffff;
+        text-shadow: 2px 2px 1px #fc3c3c;
+        text-decoration: underline;
+        margin-bottom: 20px;
+    }
+
+    .daftar-skill {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: #ffffff;
+        margin: 50px 0 0 0;
+    }
+
+    .daftar-skill span {
+        display: block;
+    }
+
+    .skill-html,
+    .skill-css,
+    .skill-js {
+        position: relative;
+        margin: 20px 0;
+    }
+
+
+    .fa-html5,
+    .fa-css3-alt,
+    .fa-js {
+        transition: all 300ms ease-in-out;
+        font-size: 10em;
+        text-align: center;
+    }
+
+    .fa-html5 {
+        color: #fc3c3c;
+    }
+
+    .fa-html5:hover {
+        text-shadow: 2px 2px 1px #ffffff;
+    }
+
+    .fa-css3-alt {
+        color: #00a2ff;
+    }
+
+    .fa-css3-alt:hover {
+        color: #00a2ff;
+        text-shadow: 2px 2px 1px #ffffff;
+    }
+
+    .fa-js {
+        color: yellow;
+    }
+
+    .fa-js:hover {
+        color: yellow;
+        text-shadow: 2px 2px 1px #ffffff;
+    }
+
+    .span-html,
+    .span-css,
+    .span-js {
+        width: 300px;
+        padding: 5px;
+        text-align: center;
+        border-radius: 20px;
+        font-weight: bold;
+        font-size: 1.1em;
+        box-shadow: 1px 1px 1px #ffffff;
+    }
+
+    .span-html {
+        position: absolute;
+        top: 120px;
+        left: 200px;
+        background-color: #fc3c3c;
+    }
+
+    .span-css {
+        position: absolute;
+        top: 320px;
+        left: 200px;
+        background-color: #29abf4
+    }
+
+    .span-js {
+        position: absolute;
+        top: 520px;
+        left: 200px;
+        background-color: yellow;
+    }
+
+    /* Untuk section-tiga */
+    .section-tiga {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #fc3c3c;
+    }
+
+    .services {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .daftar-services {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 200px 200px;
+    }
+
+
+    .daftar-services i {
+        font-size: 7rem;
+        color: #0e3658;
+        transition: all 400ms ease-in-out;
+    }
+
+    .daftar-services i:hover {
+        color: #00a2ff;
+        text-shadow: 2px 2px 1px #ffffff;
+    }
+
+    .wd,
+    .wp,
+    .i-x {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #0e3658;
+    }
+
+    .wd {
+        position: absolute;
+        left: 180px;
+        bottom: 150px;
+    }
+
+    .wp {
+        position: absolute;
+        left: 560px;
+        bottom: 150px;
+    }
+
+    .i-x {
+        position: absolute;
+        left: 78%;
+        bottom: 150px;
+    }
+
+
+    .ket-services {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        padding: 50px;
+        margin-top: 20px;
+        background-color: #0e3658;
+        border-radius: 8px;
+        border-left: 3px solid #29abf4;
+        border-bottom: 3px solid #29abf4;
+        outline: none;
+    }
+
+    .ket-services p {
+        color: #29abf4;
+        font-size: 1.1rem;
+        text-align: justify;
+    }
+
+    .footer {
+        width: 100%;
+        padding: 100px 20px;
+        background-color: #010102;
+        color: white;
+        border-top: 5px solid #00a2ff;
+        min-height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 
 @media screen and (min-width: 280px) and (max-width: 1116px) {
@@ -217,6 +627,10 @@ body {
         justify-content: center;
         align-items: center;
         margin: 30px 0px;
+    }
+
+    .sosmed ul {
+        display: flex;
     }
 
     .sosmed li {
